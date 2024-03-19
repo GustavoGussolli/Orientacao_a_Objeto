@@ -18,8 +18,29 @@
 
         $vetor2 = array();
 
-        
+        foreach($vetorA as $valor){
 
+            $fatorial  = $valor;
+
+                if($valor >= 1){
+
+                    for($i = $valor -1; $i > 1; $i--){
+
+                        $fatorial *= $i;
+
+                    }
+                } else {
+
+                    $fatorial = 0;
+
+                }
+
+                array_push($vetor2,$fatorial);
+
+        }
+        
+       return $vetor2;
+        
     }
 
     function vetor3($vetorA){
